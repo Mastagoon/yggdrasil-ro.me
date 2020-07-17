@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    background: url("../imgs/bg.jpg");
+    position: relative;
+    background-size: cover;
+    z-index: 10;
+    overflow: hidden;
+}
+
+body::before {
+    z-index: -1;
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-section {
+    background-color: #ff0000;
+}
+
+.login-section .form {
+    position: absolute;
+    width: 25%;
+    right: 59px;
+    top: 307px;
+}
+
+.login-section .succubus {
+    position: absolute;
+    right: 93px;
+    z-index: -1;
+}
+
+.login-section form {
+    color: #fff;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+}
+
+.login-section form input {
+    padding: 15px 20px 15px 20px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.login-section form input {
+    display: block;
+}
+
+.login-section .form .logo-form {
+    position: absolute;
+    display: none;
+}
