@@ -1,0 +1,107 @@
+<html dir="rtl" lang="ar">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="" charset="utf-8" />
+    <title>يجدراسيل رو - الرئيسية</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <nav id="main-nav">
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="/fluxCP">التسجيل</a>
+                </li>
+                <li><a href="https://discord.gg/Ap5ctXj">الديسكورد</a></li>
+                <li><a href="#">الشحن</a></li>
+                <li><a href="http://yggdrasil-ro.me/wiki">الويكي</a></li>
+                <li><a href="/download.html">التحميل</a></li>
+                <li><a href="/information.html">معلومات السيرفر</a></li>
+                <li><a href="/index.html" class="active">الرئيسية</a></li>
+            </ul>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <!-- <i class="fa fa-bars"></i> -->
+        </a>
+        <div class="banner-logo"><img src="imgs/logo.png" alt="" /></div>
+    </nav>
+    <style>
+        body {
+            height: 100vh;
+            background: url("../imgs/bg.jpg");
+            position: relative;
+            background-size: cover;
+            z-index: 10;
+            overflow: hidden;
+            -webkit-animation: changeColor 2s forwards;
+            /* for less modern browsers */
+            animation: changeColor 2s forwards;
+            -webkit-animation-name: changeColor;
+            animation-name: changeColor;
+        }
+        
+        @-webkit-keyframes changeColor {
+            from {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            to {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        
+        @keyframes changeColor {
+            from {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            to {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        
+        body::before {
+            z-index: -1;
+            content: "";
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            -webkit-animation: changeColor 2s forwards;
+            /* for less modern browsers */
+            animation: changeColor 2s forwards;
+        }
+    </style>
+    <div class="main-logo">
+        <img src="imgs/main.png" alt="" />
+    </div>
+
+    <!-- Register/Login form -->
+
+    <!--<div class="login-section">
+        <img src="/imgs/logo.png" alt="" class="logo-form" />
+        <div class="form">
+            <form action="" method="post">
+                <h2>تسجيل الدخول</h2>
+                <label for="username">اسم المستخدم</label>
+                <input type="text" name="username" id="username-login" value="" />
+                <label for="password">كلمة المرور</label>
+                <input type="password" name="password" id="password-login" />
+                <div class="align-checkbox">
+                    <input id="checkid" type="checkbox" value="test" />
+                    <label for="checkid">تذكرني</label>
+                </div>
+                <input type="hidden" name="server" value="" />
+                <input type="submit" value="تسجيل الدخول" class="btn-login" />
+                <p>ليس لديك حساب؟ سجل <a href="#">هنا</a></p>
+            </form>
+        </div>
+    </div>-->
+</body>
+
+</html>

@@ -21,7 +21,7 @@ $(function() {
         animateCSS: false, // AnimateCSS effect on/off
         animateCSSRepeat: false, // Repeat animation everytime user scrolls
         cssAnimation: "fadeInDown", // AnimateCSS class that will be added to selector
-        jqueryEffects: true, // jQuery animation on/off
+        jqueryEffects: false, // jQuery animation on/off
         jqueryAnim: "slideDown", // jQuery animation type: fadeIn, show or slideDown
         selector: "a", // Selector to which activeClass will be added, either "a" or "li"
         mobile: false, // If false, nav will not stick under viewport width of 480px (default) or user defined mobileWidth

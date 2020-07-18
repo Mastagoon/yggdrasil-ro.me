@@ -21,8 +21,8 @@ html {
         transform: translateY(-10000px);
     }
     to {
-        -webkit-transform: translateY(-80px);
-        transform: translateY(-80px);
+        -webkit-transform: translateY(60px);
+        transform: translateY(60px);
     }
 }
 
@@ -32,8 +32,8 @@ html {
         transform: translateY(-10000px);
     }
     to {
-        -webkit-transform: translateY(-80px);
-        transform: translateY(-80px);
+        -webkit-transform: translateY(60px);
+        transform: translateY(60px);
     }
 }
 
@@ -572,4 +572,28 @@ table td {
 #download-section hr {
     width: 70%;
     margin: 5px auto;
+}
+
+.main-logo {
+    text-align: center;
+}
+
+.main-logo img {
+    height: 500px;
+    width: 500px;
+    -webkit-animation: slideDown 2s forwards;
+    /* for less modern browsers */
+    animation: slideDown 2s forwards;
+}
+
+.banner-logo img {
+    height: 52px;
+    margin: 0;
+    padding: 0;
+    width: 93px;
+    display: inline-block;
+}
+
+.banner-logo {
+    padding: 10px 0 0 15px;
 }

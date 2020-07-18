@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html dir="rtl" lang="ar">
-
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/download.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
-    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-</head>
-
-<body>
     <style>
         body {
             min-height: 100%;
             background-size: cover;
-            background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../imgs/bg2.png") no-repeat fixed center;
-            background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../imgs/bg2.png") no-repeat fixed center;
-            background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../imgs/bg2.png") no-repeat fixed center;
+            background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url(<?php $this->themePath("imgs/bg2.png")?>) no-repeat fixed center;
+            background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url(<?php $this->themePath("imgs/bg2.png")?>) no-repeat fixed center;
+            background: linear-gradient(rgba(0, 0, 0, 0.9)), url(<?php $this->themePath("imgs/bg2.png")?>) no-repeat fixed center;
         }
         
         nav {
@@ -28,21 +14,30 @@
     <nav id="main-nav">
         <div class="nav-links">
             <ul>
-                <li>
-                    <a href="/fluxCP">التسجيل</a>
-                </li>
-                <li><a href="https://discord.gg/Ap5ctXj">الديسكورد</a></li>
                 <li><a href="#">الشحن</a></li>
-                <li><a href="http://yggdrasil-ro.me/wiki">الويكي</a></li>
-                <li><a href="/download.html">التحميل</a></li>
-                <li><a href="/information.html">معلومات السيرفر</a></li>
-                <li><a href="/index.html" class="active">الرئيسية</a></li>
+                <li><a href="#">الويكي</a></li>
+                <li><a href="#" class="active">التحميل</a></li>
+                <li><a href="#">معلومات السيرفر</a></li>
+                <li><a href="#">الرئيسية</a></li>
             </ul>
+        </div>
+        <div class="status">
+            <div class="player-count">
+                <span class="green">أونلاين</span>
+                <span>1234</span>
+                <div class="circle green"></div>
+            </div>
+            <div class="server-status">
+                <img class="server-status-icon" src="imgs/red_gemstone120x156.png" alt="" />
+                <span>حالة السيرفر</span>
+            </div>
+            <div class="register-btn">
+                <a href="#" class="primary-btn">التسجيل</a>
+            </div>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <!-- <i class="fa fa-bars"></i> -->
         </a>
-        <div class="banner-logo"><img src="imgs/logo.png" alt="" /></div>
     </nav>
 
     <section id="download-section">
@@ -96,6 +91,3 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/stickyNavbar.js@1.3.3/jquery.stickyNavbar.min.js"></script>
         <script src="script/main.js"></script>
-</body>
-
-</html>
