@@ -10,12 +10,12 @@
   - [x] HTML layout
   - [x] CSS styling
   - [x] Add animation and hover effects (low prio)
-  - [ ] Header/Footer files
-- [ ] Information section
-  - [ ] HTML layout
-  - [ ] CSS styling
-- [ ] Downloads section
-  - [ ] HTML Layout
-  - [ ] CSS Styling
+  - [x] Header/Footer files
+- [x] Information section
+  - [x] HTML layout
+  - [x] CSS styling
+- [x] Downloads section
+  - [x] HTML Layout
+  - [x] CSS Styling
 - [ ] Wrap up
-- [ ] Make website compatible with fluxCP
+- [ ] Make website compatible with fluxCPN

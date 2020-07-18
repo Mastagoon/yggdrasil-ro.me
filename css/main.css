@@ -1,22 +1,149 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body,
 *,
 html {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "tahoma";
 }
 
+@-webkit-keyframes slideDown {
+    from {
+        -webkit-transform: translateY(-10000px);
+        transform: translateY(-10000px);
+    }
+    to {
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        -webkit-transform: translateY(-10000px);
+        transform: translateY(-10000px);
+    }
+    to {
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px);
+    }
+}
+
+.login-section {
+    background-color: #ff0000;
+    -webkit-animation: slideDown 2s forwards;
+    /* for less modern browsers */
+    animation: slideDown 2s forwards;
+}
+
+.login-section h2 {
+    text-align: center;
+    padding: 60px 10px 10px 10px;
+}
+
+.login-section .form {
+    position: absolute;
+    width: 25%;
+    right: 59px;
+    top: 190px;
+}
+
+.login-section .succubus {
+    position: absolute;
+    display: none;
+    right: 93px;
+    z-index: -1;
+}
+
+.login-section form {
+    color: #fff;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+}
+
+.login-section form input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 15px 20px 15px 20px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.login-section form input[type="password"],
+input[type="text"],
+input[type="checkbox"] {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.login-section form li {
+    list-style: none;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.login-section .logo-form {
+    position: absolute;
+    right: 23px;
+    top: 80px;
+    z-index: 10;
+}
+
+.login-section .form .align-checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    padding: 10px;
+}
+
+.login-section .form .align-checkbox input {
+    margin: 5px 10px 0 0;
+}
+
+.btn-login {
+    background-color: #ffd000;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.login-section .form p a {
+    text-decoration: none;
+    color: #ffd000;
+}
+
 nav {
     width: 100%;
-    background-color: rgba(65, 118, 172, 0.4);
+    background-color: rgba(65, 118, 172, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: #ffffff;
-    height: 91px;
     font-size: 16px;
-    font-weight: bold;
     border-radius: 0 0 50px 50px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 nav a {
@@ -24,14 +151,25 @@ nav a {
     color: #ffffff;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 0;
+}
+
 .nav-links {
     width: 60%;
-    padding-top: 34px;
+    padding-top: 25px;
 }
 
 ul {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -49,43 +187,72 @@ ul li a:after {
     display: block;
     content: "";
     border-bottom: solid 3px #ffd000;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
     transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
     transform-origin: right;
     padding-top: 5px;
 }
 
 ul li a:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
 .status {
     width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
-    padding-top: 34px;
+    padding-top: 25px;
 }
 
 .server-status-icon {
     width: 35px;
     height: 40px;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     transform: translateY(-10px);
     padding-right: 5px;
 }
 
 .server-status {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .primary-btn {
     border: 3px solid #ffd000;
     padding: 10px 15px 10px 15px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .primary-btn:hover {
     background-color: #ffd000;
+    font-weight: bold;
     color: #000000;
+}
+
+.player-count {
+    background: #000;
+    text-align: center;
+    border-radius: 30%;
+    margin-bottom: auto;
+    padding: 3px;
+    border: 3px solid #000;
 }
 
 .circle {
@@ -98,6 +265,14 @@ ul li a:hover:after {
 
 .green {
     color: #2bcc05;
+}
+
+.active {
+    border-bottom: 3px solid #ffd000 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* hardware acceleration of CSS animation */
 }
 
 
@@ -124,4 +299,277 @@ ul li a:hover:after {
         background-color: #ddd;
         color: black;
     }
+}
+
+
+/* footer styling */
+
+footer {
+    background: #000;
+    border-top: 3px solid rgba(255, 208, 0, 0.8);
+    border-radius: 2px;
+    min-height: 200px;
+    color: #fff;
+}
+
+footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+footer .left-section {
+    padding-top: 20px;
+}
+
+footer .right-section {
+    padding-top: 25px;
+}
+
+footer .btn-download {
+    color: #000;
+    background-color: #ffd000;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer .btn-download:hover {
+    opacity: 0.8;
+}
+
+footer .footer-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer .footer-icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-icons a:hover {
+    opacity: 0.8;
+}
+
+@-webkit-keyframes navbarSlide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes navbarSlide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#info-section {
+    text-align: center;
+    color: #fff;
+}
+
+#info-section h2 {
+    border-bottom: 3px solid #ffd000;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#info-section p {
+    padding-top: 10px;
+}
+
+#info-section .download-links {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+#info-section .download-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    width: 20%;
+    margin: 0 10px;
+}
+
+#info-section .download-links a:hover {
+    opacity: 0.8;
+}
+
+#info-section .download-links a i {
+    margin-right: 5px;
+}
+
+#info-section .download-links .direct {
+    color: #000;
+    background-color: #ffd000;
+}
+
+#info-section .download-links .mediafire {
+    color: #fff;
+    background-color: #1e90ff;
+}
+
+#info-section {
+    width: 80%;
+    margin: auto;
+}
+
+hr {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.right {
+    text-align: right;
+}
+
+.main-info {
+    text-align: right;
+    width: 65%;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.main-info p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+table,
+td,
+th {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    font-weight: normal;
+}
+
+table th,
+td {
+    padding: 10px 15px;
+}
+
+table th {
+    background-color: #343434;
+}
+
+table td {
+    background-color: #2a2a2a;
+}
+
+.custom-features p {
+    text-align: right;
+}
+
+.custom-features table {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.custom-features table a {
+    text-decoration: none;
+    color: #ffd000;
+}
+
+.custom-features table td {
+    background-color: #343434;
+}
+
+#download-section {
+    text-align: center;
+    color: #fff;
+}
+
+#download-section h2 {
+    border-bottom: 3px solid #ffd000;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#download-section p {
+    padding-top: 10px;
+}
+
+#download-section .download-links {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+#download-section .download-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    width: 20%;
+    margin: 0 10px;
+}
+
+#download-section .download-links a:hover {
+    opacity: 0.8;
+}
+
+#download-section .download-links a i {
+    margin-right: 5px;
+}
+
+#download-section .download-links .direct {
+    color: #000;
+    background-color: #ffd000;
+}
+
+#download-section .download-links .mediafire {
+    color: #fff;
+    background-color: #1e90ff;
+}
+
+#download-section hr {
+    width: 70%;
+    margin: 5px auto;
 }
