@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/download.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="imgs/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>يجدراسيل رو - التحميل</title>
 </head>
 
 <body>
@@ -26,47 +26,74 @@
             background: none;
         }
     </style>
-    <nav id="main-nav">
-        <div class="nav-links">
-            <ul>
-                <li>
-                    <a href="/fluxCP">التسجيل</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/fluxCP/">التسجيل</a>
                 </li>
-                <li><a href="https://discord.gg/Ap5ctXj">الديسكورد</a></li>
-                <li><a href="#">الشحن</a></li>
-                <li><a href="http://yggdrasil-ro.me/wiki">الويكي</a></li>
-                <li><a href="/download.html">التحميل</a></li>
-                <li><a href="/information.html">معلومات السيرفر</a></li>
-                <li><a href="/index.html" class="active">الرئيسية</a></li>
-            </ul>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <!-- <i class="fa fa-bars"></i> -->
-        </a>
-        <div class="banner-logo"><img src="imgs/logo.png" alt="" /></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.gg/p5ZZbvm">الديسكورد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/forum/">المنتدى</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://yggdrasil-ro.me/wiki/">الويكي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/download.html">التحميل</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الشحن</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/information.html">معلومات السيرفر</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">الرئيسية <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon navbar-inverse"></span>
+      </button>
+      <div class="banner-logo"><img src="imgs/logo.png" alt="" /></div>
     </nav>
 
     <section id="download-section">
-        <div class="logo">
-            <img src="/imgs/logo.png" alt="" class="logo-download" />
-        </div>
-        <h2>تحميل اللعبة</h2>
-        <p>للبدء في اللعب مباشرةً, كل ماعليك فعله هو تحميل ملفات اللعبة</p>
-        <div class="download-links">
-            <a href="#" class="download-link direct"><i class="fa fa-download"></i>Direct</a
-        >
-        <a href="#" class="download-link mediafire"
-          ><i class="fa fa-fire"></i>MediaFire</a
+      <div class="logo">
+        <img src="/imgs/logo.png" alt="" class="logo-download" />
+      </div>
+      <h2>تحميل اللعبة</h2>
+      <p>للبدء في اللعب مباشرةً, كل ماعليك فعله هو تحميل ملفات اللعبة</p>
+      <div class="download-links">
+        <a href="#" class="download-link direct"
+          ><i class="fa fa-download"></i> Direct
+        </a>
+                    <a href="#" class="download-link mediafire"><i class="fa fa-fire"></i>MediaFire</a
         >
       </div>
       <hr />
       <p>الباتشر الخفيف (لا ينصح به)</p>
       <div class="download-links">
         <a href="#" class="download-link direct"
-          ><i class="fa fa-download"></i>Direct</a
-        >
-        <a href="#" class="download-link mediafire"
-          ><i class="fa fa-fire"></i> MediaFire</a
+          ><i class="fa fa-download"></i> Direct
+        </a>
+                    <a href="#" class="download-link mediafire"><i class="fa fa-fire"></i> MediaFire</a
         >
       </div>
     </section>
@@ -94,6 +121,7 @@
         </div>
         </footer>
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/stickyNavbar.js@1.3.3/jquery.stickyNavbar.min.js"></script>
         <script src="script/main.js"></script>

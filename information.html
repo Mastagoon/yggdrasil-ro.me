@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css" />
@@ -26,94 +27,127 @@
             background: none;
         }
     </style>
-    <nav id="main-nav">
-        <div class="nav-links">
-            <ul>
-                <li>
-                    <a href="/fluxCP">التسجيل</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/fluxCP/">التسجيل</a>
                 </li>
-                <li><a href="https://discord.gg/Ap5ctXj">الديسكورد</a></li>
-                <li><a href="#">الشحن</a></li>
-                <li><a href="http://yggdrasil-ro.me/wiki">الويكي</a></li>
-                <li><a href="/download.html">التحميل</a></li>
-                <li><a href="/information.html">معلومات السيرفر</a></li>
-                <li><a href="/index.html" class="active">الرئيسية</a></li>
-            </ul>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <!-- <i class="fa fa-bars"></i> -->
-        </a>
-        <div class="banner-logo"><img src="imgs/logo.png" alt="" /></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.gg/p5ZZbvm">الديسكورد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/forum/">المنتدى</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://yggdrasil-ro.me/wiki/">الويكي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/download.html">التحميل</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الشحن</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/information.html">معلومات السيرفر</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">الرئيسية <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon navbar-inverse"></span>
+      </button>
+      <div class="banner-logo"><img src="imgs/logo.png" alt="" /></div>
     </nav>
+
     <section id="info-section">
-        <div class="logo">
-            <img src="/imgs/logo.png" alt="" class="logo-download" />
+      <div class="logo">
+        <img src="/imgs/logo.png" alt="" class="logo-download" />
+      </div>
+      <h2>المعلومات الأساسية</h2>
+      <p class="right">
+        يجدراسيل رو هو سيرفر عربي خاص للعبة راجناروك أونلاين يعمل بنظام الرينوال
+        يقدم خادم يجدراسيل رو تجربة رينوال فريدة ومميزة, بتركيز أساسي على توازن
+        المهارات للحرص على صنع بيئة متوازنة يمكن لجميع اللاعبين الاستمتاع بها
+      </p>
+      <div class="main-info">
+        <div class="table-1">
+          <p>الخبرة والإسقاط</p>
+          <table id="t01">
+            <tr>
+              <th>الخبرة الأساسية والوظيفية</th>
+              <td>x50</td>
+            </tr>
+            <tr>
+              <th>خبرة المهام</th>
+              <td>x30</td>
+            </tr>
+            <tr>
+              <th>الإسقاط</th>
+              <td>x20</td>
+            </tr>
+            <tr>
+              <th>إسقاط البطاقات</th>
+              <td>x20</td>
+            </tr>
+
+            <tr>
+              <th>بطاقات الزعماء</th>
+              <td>0.02%</td>
+            </tr>
+          </table>
         </div>
-        <h2>المعلومات الأساسية</h2>
-        <p class="right">
-            يجدراسيل رو هو سيرفر عربي خاص للعبة راجناروك أونلاين يعمل بنظام الرينوال يقدم خادم يجدراسيل رو تجربة رينوال فريدة ومميزة, بتركيز أساسي على توازن المهارات للحرص على صنع بيئة متوازنة يمكن لجميع اللاعبين الاستمتاع بها
+        <div class="table-2">
+          <p>معلومات عامة</p>
+          <table id="t02">
+            <tr>
+              <th>نظام السيرفر</th>
+              <td>رينوال</td>
+            </tr>
+            <tr>
+              <th>الحلقة الحالية</th>
+              <td>16.2</td>
+            </tr>
+            <tr>
+              <th>المستوى الأقصى</th>
+              <td>185/65</td>
+            </tr>
+            <tr>
+              <th>تحديثات المهن الثالثة</th>
+              <td>تحديث الراقصة والمغني</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <hr />
+
+      <div class="custom-features">
+        <h2>الميزات الخاصة بالسيرفر</h2>
+        <p>
+          يحتوي سيرفر يجدراسيل رو على العديد من الميزات الخاصة والفريدة<br />
+          سواءً كنت من محبي الحلبة أو الحرب, أو من جامعي الأدوات النادرة أو
+          غيرها, ستجد ماتريده في يجدراسيل رو
         </p>
-        <div class="main-info">
-            <div class="table-1">
-                <p>الخبرة والإسقاط</p>
-                <table id="t01">
-                    <tr>
-                        <th>الخبرة الأساسية والوظيفية</th>
-                        <td>x50</td>
-                    </tr>
-                    <tr>
-                        <th>خبرة المهام</th>
-                        <td>x30</td>
-                    </tr>
-                    <tr>
-                        <th>الإسقاط</th>
-                        <td>x20</td>
-                    </tr>
-                    <tr>
-                        <th>إسقاط البطاقات</th>
-                        <td>x20</td>
-                    </tr>
-
-                    <tr>
-                        <th>بطاقات الزعماء</th>
-                        <td>0.02%</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="table-2">
-                <p>معلومات عامة</p>
-                <table id="t02">
-                    <tr>
-                        <th>نظام السيرفر</th>
-                        <td>رينوال</td>
-                    </tr>
-                    <tr>
-                        <th>الحلقة الحالية</th>
-                        <td>16.2</td>
-                    </tr>
-                    <tr>
-                        <th>المستوى الأقصى</th>
-                        <td>185/65</td>
-                    </tr>
-                    <tr>
-                        <th>تحديثات المهن الثالثة</th>
-                        <td>تحديث الراقصة والمغني</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <hr />
-
-        <div class="custom-features">
-            <h2>الميزات الخاصة بالسيرفر</h2>
-            <p>
-                يحتوي سيرفر يجدراسيل رو على العديد من الميزات الخاصة والفريدة<br /> سواءً كنت من محبي الحلبة أو الحرب, أو من جامعي الأدوات النادرة أو غيرها, ستجد ماتريده في يجدراسيل رو
-            </p>
-            <div class="table-2">
-                <table id="t03">
-                    <tr>
-                        <th><a href="http://yggdrasil-ro.me/wiki">عملات الزعماء</a></th>
-                        <td><a href="http://yggdrasil-ro.me/wiki">خرائط الـ PK</a></td>
+        <div class="table-2">
+          <table id="t03">
+            <tr>
+              <th><a href="http://yggdrasil-ro.me/wiki">عملات الزعماء</a></th>
+                    <td><a href="http://yggdrasil-ro.me/wiki">خرائط الـ PK</a></td>
                     </tr>
                     <tr>
                         <th>
@@ -133,37 +167,38 @@
                             <a href="http://yggdrasil-ro.me/wiki">نظام بيوت النقابة</a>
                         </td>
                     </tr>
-                </table>
-            </div>
+                    </table>
         </div>
-    </section>
+        </div>
+        </section>
 
-    <footer>
-        <div class="container">
-            <div class="right-section">
-                <p>Designed By: Mastagoon</p>
-                <p>جميع الحقوق محفوظة</p>
-                <p>YggdrasilRO©2020</p>
-            </div>
-            <div class="left-section">
-                <div class="download-btn-footer">
-                    <a href="#" class="btn-download">حمل الآن</a>
+        <footer>
+            <div class="container">
+                <div class="right-section">
+                    <p>Designed By: Mastagoon</p>
+                    <p>جميع الحقوق محفوظة</p>
+                    <p>YggdrasilRO©2020</p>
                 </div>
-                <div class="footer-icons">
-                    <a href="https://discord.gg/p5ZZbvm"><i class="fab fa-2x fa-discord" aria-hidden="true"></i
+                <div class="left-section">
+                    <div class="download-btn-footer">
+                        <a href="#" class="btn-download">حمل الآن</a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="https://discord.gg/p5ZZbvm"><i class="fab fa-2x fa-discord" aria-hidden="true"></i
             ></a>
-                    <a href="#"><i class="fab fa-2x fa-facebook" aria-hidden="true"></i
+                        <a href="#"><i class="fab fa-2x fa-facebook" aria-hidden="true"></i
             ></a>
-                    <a href="https://github.com/mastagoon"><i class="fab fa-2x fa-github" aria-hidden="true"></i
+                        <a href="https://github.com/mastagoon"><i class="fab fa-2x fa-github" aria-hidden="true"></i
             ></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/stickyNavbar.js@1.3.3/jquery.stickyNavbar.min.js"></script>
-    <script src="script/main.js"></script>
+        </footer>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/stickyNavbar.js@1.3.3/jquery.stickyNavbar.min.js"></script>
+        <script src="script/main.js"></script>
 </body>
 
 </html>
